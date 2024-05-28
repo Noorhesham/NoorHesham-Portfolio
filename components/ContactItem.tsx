@@ -1,11 +1,11 @@
-'use client'
-import {ReactNode, useState} from 'react'
+"use client";
+import { ReactNode, useState } from "react";
 
-function ContactItem({icon,text,link}:{icon:ReactNode,text:string,link:string}) {
-    const[hover,setHover]=useState(false)
-    function handleHover(){
-      setHover(h=>!h);
-    }
+function ContactItem({ icon, text, link }: { icon: ReactNode; text: string; link: string }) {
+  const [hover, setHover] = useState(false);
+  function handleHover() {
+    setHover((h) => !h);
+  }
   return (
     <li
       onMouseEnter={handleHover}
@@ -16,7 +16,7 @@ function ContactItem({icon,text,link}:{icon:ReactNode,text:string,link:string}) 
         {icon}
       </a>
       {hover && (
-        <p className=" absolute bg-violet-700 text-gray-100 text-lg p-2 rounded-md w-[7rem] left-[100%] top-[0] capitalize">
+        <p className=" absolute bg-violet-700 text-gray-100 text-sm md:text-base  p-2 rounded-md w-[7rem] left-[100%] top-[0] capitalize">
           Check out my {text}
         </p>
       )}
