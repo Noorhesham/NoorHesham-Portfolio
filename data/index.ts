@@ -139,7 +139,7 @@ export const projects = [
     link: "https://github.com/adrianhajdin/ai_saas_app",
   },
   {
-    title: "the wild oases",
+    title: "the wild oases admin dashboard",
     img: "/wild.png",
     video:
       "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F100006306765558%2Fvideos%2F2323603804515731%2F&show_text=false&width=560&t=0",
@@ -155,13 +155,83 @@ export const projects = [
     git: "https://github.com/Noorhesham/Wild-Oases",
   },
   {
+    title: "the wild oases interface",
+    img: "/Screenshot (132).png",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7198435428427816960?compact=1",
+    gen: "React",
+    link: "https://wild-oasses-interface.vercel.app/",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/supa.jpeg"],
+
+    des: `I implemented a full reservation booking system with 2 web apps 
+    one dashboard single page app for admins 
+    and other SSR Next.js project user interface that allows users to book ! 
+    🌲 **User-Facing Website** 🌲
+    Built with **Next.js** and **TypeScript**, our user interface is sleek, responsive, and user-friendly. Here’s what makes it special:
+    - **Server-Side Rendering (SSR)** and **React Server Components (RSC)** for fast, dynamic pages.
+    - **Suspense** for seamless data loading.
+    - **Auth.js** integration for easy Google sign-in.
+    - Gorgeous design with **Tailwind CSS**.
+    - Book any cabin effortlessly with our intuitive interface.`,
+    id: 15,
+    git: "https://github.com/Noorhesham/Wild-Oasses-Interface",
+  },
+  {
+    title: "Robotic Design Modern interface",
+    img: "/Screenshot (131).png",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195121446870757376?compact=1",
+    gen: "React",
+    link: "https://robotic-design-modern.vercel.app/",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
+    des: `Modern Interface: Experience a sleek and intuitive design crafted for seamless navigation.
+    Engaging Animations: Elevate your browsing experience with captivating animations and smooth transitions.
+    Parallax Scrolling: Dive deeper into the content with immersive parallax scrolling effects.
+    Responsive Design: Accessible across all devices, ensuring a consistent experience whether you're on desktop or mobile.
+    Framer Motion & Next.js: Leveraging Framer Motion and Next.js for dynamic and interactive user interfaces.
+    UI/UX Excellence: Meticulously designed UI/UX to ensure a user-centric approach and enhanced usability.
+    💻 Technical Highlights:
+    One of the core technical achievements of our website is the seamless integration of SQL database using Next.js server actions. This enables robust functionalities including:
+    Login & Signup Operations: Secure and streamlined user authentication process.
+    Data Integration: Seamlessly integrate SQL database to store and retrieve essential data for personalized user experiences.
+    At JS Mind, we're committed to pushing the boundaries of technology to deliver unparalleled experiences. Dive into the world of brainwave exploration and unlock new insights with us!`,
+    id: 16,
+    git: "https://github.com/Noorhesham/Robotic-design-modern",
+  },
+  {
+    title: "The Dog Game !",
+    img: "/Screenshot (135).png",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195121446870757376?compact=1",
+    gen: "React",
+    link: "https://glittery-brigadeiros-5e42b8.netlify.app/",
+    iconLists: ["/js.png"],
+    des: `🎮 **Gameplay Galore:** Dive into a world where every move counts! Players can engage in a variety of actions, from dizzying jumps to intense battles with enemies. With smooth collision detection and fluid animations, the gaming experience is truly immersive.
+    👾 **Enemy Encounters:** Get ready for some adrenaline-pumping encounters! Players will face off against a range of enemies, each with their own unique challenges and strategies. It's all about quick reflexes and sharp thinking to emerge victorious!
+    🌌 **Mesmerizing Backgrounds:** Immerse yourself in stunning parallax backgrounds that add depth and dimension to the gameplay. Whether you're soaring through the skies or delving into mysterious dungeons, the scenery will leave you in awe.
+    🎨 **Canvas Creativity:** Leveraging the power of HTML5 canvas, this game boasts visually striking graphics and animations. Every detail is meticulously crafted to deliver a visually stunning experience that keeps players coming back for more.
+    ⚔️ **Health Points & Player Actions:** Strategize your moves and manage your health points wisely! With a range of player actions at your disposal, including powerful attacks and evasive maneuvers, every decision shapes the outcome of the game.
+    🚀 **Built with OOP Classes:** Behind the scenes, the game is built on a foundation of Object-Oriented Programming (OOP) principles. This ensures clean, modular code that's easy to maintain and extend, setting the stage for future enhancements and updates.
+    `,
+    id: 17,
+    git: "https://github.com/Noorhesham/2d-canvas-game-js",
+  },
+  {
+    title: "My previous portfolio",
+    img: "/Screenshot (136).png",
+    gen: "React",
+    link: " https://noor-hesham-portfolio.netlify.app/",
+    iconLists: ["/tail.svg", "/js.png", "/re.svg", "/fm.svg"],
+    des: `Old portfolio before this update !
+    `,
+    id: 20,
+    git: "https://github.com/Noorhesham/My-portfolio",
+  },
+  {
     title: "Promptobia",
     img: "/prompt.png",
     gen: "Next",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/idhHZwYUWa.png", "/next.webp"],
     video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7161779432167202816?compact=1",
     des: `Revolutionize your AI interactions with Promptopia – a platform for seamless prompt customization and management. Tailor AI responses, effortlessly organize prompts, and streamline retrieval with a tagging system.
-
+    
     Join a vibrant community, showcase curated prompts, and elevate your AI journey. Secure sign-up with Google ensures a hassle-free experience.
     
     Crafted with Next.js, React, Tailwind CSS, MongoDB, and more, Promptopia promises a responsive, sleek, and dynamic user experience.
@@ -171,17 +241,7 @@ export const projects = [
     link: "https://promptobia-noor-hesham.vercel.app/",
     git: "https://github.com/Noorhesham/NEXTSJ-promptobia-noorHesham",
   },
-  {
-    title: "Marvel Website Clone",
-    img: "/marvel.png",
-    gen: "Sass",
-    iconLists: [ "/js.png"],
-    video:
-      "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100006306765558%2Fvideos%2F462448592723232%2F%3Fidorvanity%3D1121696938256769&show_text=false&width=560&t=0",
-    des: ` my inaugural frontend project – a static Marvel website crafted with HTML, CSS, and JS! 🌐✨ As the team leader, I orchestrated the seamless integration of movies, games, music, and news, creating a comprehensive hub for all things Marvel. Without APIs, we meticulously curated and added data to ensure a rich user experience. This project reflects not only my technical skills but also my leadership in assembling and guiding a collaborative team to bring our Marvel universe to life. Dive into the Marvel experience we've created – a testament to passion, teamwork, and the power of frontend development! 💪🎉 `,
-    id: 6,
-    git: "https://github.com/Noorhesham/Marvel_Web",
-  },
+
   {
     title: "Speedy Wheels",
     img: "/wheeles.png",
@@ -212,6 +272,28 @@ export const projects = [
     git: "https://github.com/Noorhesham/cars-showcase-SSR-nextjs",
   },
   {
+    title: "Anime Infinte Scroll !",
+    img: "/Screenshot (130).png",
+    gen: "React",
+    link: "https://anime-infinte-scroll-server-side-x5ns.vercel.app/",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/next.webp"],
+    des: `Implementing infinte scrolling in next js with anime api sample data !
+    `,
+    id: 18,
+    git: "https://github.com/Noorhesham/anime-infinte-scroll-server-side",
+  },
+  {
+    title: "Marvel Website Clone",
+    img: "/marvel.png",
+    gen: "Sass",
+    iconLists: ["/js.png"],
+    video:
+      "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100006306765558%2Fvideos%2F462448592723232%2F%3Fidorvanity%3D1121696938256769&show_text=false&width=560&t=0",
+    des: ` my inaugural frontend project – a static Marvel website crafted with HTML, CSS, and JS! 🌐✨ As the team leader, I orchestrated the seamless integration of movies, games, music, and news, creating a comprehensive hub for all things Marvel. Without APIs, we meticulously curated and added data to ensure a rich user experience. This project reflects not only my technical skills but also my leadership in assembling and guiding a collaborative team to bring our Marvel universe to life. Dive into the Marvel experience we've created – a testament to passion, teamwork, and the power of frontend development! 💪🎉 `,
+    id: 6,
+    git: "https://github.com/Noorhesham/Marvel_Web",
+  },
+  {
     title: "React Pizza App",
     img: "/pizza.png",
     gen: "React",
@@ -224,7 +306,7 @@ export const projects = [
   {
     title: " Recipe  App",
     img: "/recipe.png",
-    iconLists: ["/js.png",],
+    iconLists: ["/js.png"],
     des: ` an app to search for food recipes add bookmarks upload recipes change servings update the dom and more using
               mvc architect and oop`,
     id: 9,
@@ -235,7 +317,7 @@ export const projects = [
     link: "https://worldwise-appnoor.netlify.app/",
     img: "/map.png",
     gen: "React",
-    iconLists: ["/re.svg",],
+    iconLists: ["/re.svg"],
     des: ` website to search cities and write down memories in an interactive map using react leaflet library`,
     id: 10,
     git: "https://github.com/Noorhesham/MapSearchCountries-citiesApp",
@@ -244,7 +326,7 @@ export const projects = [
     title: "use popcorn",
     img: "/movies.png",
     gen: "React",
-    iconLists: ["/re.svg",],
+    iconLists: ["/re.svg"],
     des: ` a small app to search for movies save it to watch list etc.. `,
     id: 11,
     link: "https://movie-usepopcorn.netlify.app/",
@@ -253,7 +335,7 @@ export const projects = [
     title: "japan journy",
     img: "/japan.png",
     gen: "Sass",
-    iconLists: ["/sass.webp",],
+    iconLists: ["/sass.webp"],
     des: `Sass design for a travel webpage with cool css effects and animations `,
     id: 12,
     link: "https://japan-webpage.netlify.app/",
@@ -264,7 +346,7 @@ export const projects = [
     title: "graphic designer portfolio",
     img: "/portfolio.png",
     gen: "Javascript",
-    iconLists: ["/js.png",],
+    iconLists: ["/js.png"],
     des: `as a freelancer built up  a portfolio for a graphic designer to show its work`,
     id: 13,
     link: "https://japan-webpage.netlify.app/",
@@ -363,22 +445,22 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "backend  Dev - JSM Tech",
+    desc: "Designed and developed apis using node js express and relational dbs.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "Led the dev of a web apps for a client, from initial concept to deployment.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Full stack Developer",
+    desc: "Developed and maintained solo apps from scratch using mern stack.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -388,13 +470,21 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
+    lin: "https://github.com/Noorhesham",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/noor-elgendy-0aa84b207/",
+  },
+  {
+    id: 4,
+    img: "/fb.webp",
+    link: "https://web.facebook.com/profile.php?id=100006306765558",
+  },
+  {
+    id: 5,
+    img: "/insta.webp",
+    link: "https://www.instagram.com/noorhesham174/",
   },
 ];

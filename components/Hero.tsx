@@ -31,11 +31,11 @@ const Hero = () => {
           />
           <TypeWriter words={["MongoDB", "Express.js", "React", "Node.js"]} />
         <div className="flex items-center gap-5">
-        <a className=" mt-1" href="#about">
+        <a className=" mt-1 text-nowrap " href="#about">
             <MagicButton icon={<FaLocationArrow/>} text="Show My Work" />
           </a>
 
-          <a className=" mt-auto" href="/cv.pdf" download="cv">
+          <a className=" mt-auto text-nowrap" href="/cv.pdf" download="cv">
             {" "}
             <ButtonShine text={'Download my cv'} />
           </a>

@@ -13,20 +13,23 @@ const CodeHighlighter = () => {
     }
     workExperience() {
       return [
-        {'Elmandoob Platform':'A platform that allows merchants to exchange products with next.js and typescript' },
-        { 'Landing Page for a Designer': 'a portfolio for a graphic designer to show its work using vanilla javascript and sass' },
+        {'Elmandoob Platform':'A platform that allows merchants
+         to exchange products with next.js and typescript' },
+        { 'Landing Page for a Designer': 'a portfolio for a 
+        graphic designer to show its work using vanilla javascript and sass' },
       ]
     }
     education() {
       return [
-        { '2021-2025': 'Faculty of Computer Information SciencesMansoura University' },
+        { '2021-2025': 
+        'Faculty of Computer Information SciencesMansoura University' },
       ]
     }
     skills() {
       return [
-        'HTML/CSS/JS',  'Node.js','Express.js','Tailwind', 'React','Next.js'
-        'SCSS', 'npm/yarn','SSR', 'SPA', 'GIT', 'Web Sockets', 'Supabase'
-        'MySQL/MongoDB','TypeScript'
+        'HTML/CSS/JS',  'Node.js','Express.js','Tailwind', 
+        'React','Next.js''SCSS', 'npm/yarn','SSR', 'SPA', 
+        'GIT', 'Web Sockets', 'Supabase','MySQL/MongoDB','TypeScript'
       ]
     }
 }`;
@@ -34,8 +37,8 @@ const CodeHighlighter = () => {
   return (
     <div className="relative flex items-end justify-between rounded-xl z-10">
       <SyntaxHighlighter
-        className="code-highlighter"
-        customStyle={{ background: "#14121c" }}
+        className="code-highlighter w-full md:text-base text-sm"
+        customStyle={{ background: "#14121c", whiteSpace: "pre-wrap", wordWrap: "break-word" }}
         language="javascript"
         style={a11yDark}
         showLineNumbers

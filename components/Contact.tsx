@@ -49,21 +49,21 @@ function Contact() {
       >
         <motion.div className=" flex-col text-gray-1  dark:text-gray-200 gap-4 flex  capitalize ">
           <motion.h1
-            className=" text-violet-500 text-7xl font-semibold mb-5 "
+            className=" text-violet-500 text-xl lg:text-4xl xl:text-7xl font-semibold mb-5 "
             variants={variants}
           >
             contact me now !
           </motion.h1>
           <motion.div variants={variants}>
-            <h2 className=" text-3xl capitalize font-semibold">mail</h2>
+            <h2 className="text-sm  lg:text-3xl capitalize font-semibold">mail</h2>
             <span>noordragon2004@gmail.com</span>
           </motion.div>
           <motion.div variants={variants}>
-            <h2 className="text-3xl capitalize font-semibold">address</h2>
+            <h2 className="text-sm lg:text-3xl capitalize font-semibold">address</h2>
             <span>from egypt,mansoura </span>
           </motion.div>
           <motion.div variants={variants}>
-            <h2 className="text-3xl capitalize font-semibold">phone</h2>
+            <h2 className=" text-sm lg:text-3xl capitalize font-semibold">phone</h2>
             <span>+20 1145838187</span>
           </motion.div>
         </motion.div>
@@ -106,7 +106,7 @@ function Contact() {
           <motion.form
             onSubmit={sendEmail}
             ref={formRef}
-            className="flex flex-col items-start lg:items-stretch gap-10 flex-1 w-[30rem] lg:w-[50rem] relative z-10"
+            className="flex flex-col items-start lg:items-stretch gap-10 flex-1 w-auto lg:w-[50rem] relative z-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 3, duration: 1 }}
