@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import { FaLocationArrow } from "react-icons/fa";
 
 export const InfiniteMovingCards = ({
   items,
@@ -92,6 +93,12 @@ export const InfiniteMovingCards = ({
             <span className="text-xl font-bold leading-[1.6] text-white">{item.name}</span>
             <span className=" text-sm leading-[1.6] text-white-200 font-normal">{item.title}</span>
             <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">{item.quote}</span>
+            <div className=" flex items-center justify-center">
+            <a href={item.link} target='_blank' className=" mt-2 ml-auto flex lg:text-xl md:text-xs text-sm text-purple">
+              Check certificate
+              <FaLocationArrow className=" ms-3" color="#CBACF9" />
+            </a>
+          </div>
             </div>
           </a>
         ))}

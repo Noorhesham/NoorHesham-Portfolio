@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Education", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 export const tech = ["/type.png", "/node.png", "/idhHZwYUWa.png", "/next.png", "/react.svg", "/tailwind.png"];
