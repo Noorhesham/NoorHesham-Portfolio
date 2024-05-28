@@ -1,6 +1,6 @@
 "use client"
 import { projects } from "@/data";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Project from "./Project";
 import ProjectDescription from "./ProjectDescription";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -27,7 +27,8 @@ const ProjectsBig = () => {
     router.push("/", { scroll: false });
   };
   return (
-    <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-2  mt-24">
+    <Suspense fallback={<img src="/loading.png" alt="loading" className=" text-5xl animate-spin fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"/>}>
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-2  mt-24">
       {selectedProject ? (
         <ProjectDescription moveback={handleBackClick} project={selectedProject} />
       ) : (
@@ -38,6 +39,7 @@ const ProjectsBig = () => {
           ))    
       )}
     </div>
+    </Suspense>
   );
 };
 
