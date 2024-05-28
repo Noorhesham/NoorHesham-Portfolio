@@ -3,6 +3,7 @@ import ButtonGradient from "@/components/ButtonGradient";
 import Clients from "@/components/Clients";
 import CodeHighlighter from "@/components/CodeHighlighter";
 import Contact from "@/components/Contact";
+import ContactMe from "@/components/ContactMe";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className="relative flex justify-center overflow-clip  bg-black-100 items-center flex-col  mx-auto sm:px-10 px-5">
       <FloatingNav navItems={navItems} />
+      <ContactMe/>
       <div className=" max-w-7xl w-full">
         <TracingBeam>
           <Hero />
