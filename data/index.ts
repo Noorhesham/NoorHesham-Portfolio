@@ -136,7 +136,9 @@ export const projects = [
     gen: "Javascript",
     img: "/gaming.png",
     iconLists: ["/sass.webp", "/js.png"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: 'https://gaming-castle.netlify.app/',
+    video: 'https://www.youtube.com/embed/le8_Q7OT52E',
+    git: 'https://github.com/Noorhesham/gaming-castle',
   },
   {
     title: "the wild oases admin dashboard",
