@@ -1,14 +1,15 @@
-"use client"
+"use client";
 import { motion, useInView } from "framer-motion";
-import { useRef,useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./ButtonColorful";
 
 function Contact() {
   const ref = useRef<any>();
   const formRef = useRef<any>();
-  const [err,setErr]=useState(false)
-  const [success,setSuccess]=useState(false)
+  const [err, setErr] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [pending, setPending] = useState(false);
   const isInView = useInView(ref, { margin: "-100px" });
   const variants = {
     initial: { y: 500, opacity: 0 },
@@ -18,29 +19,25 @@ function Contact() {
       transition: { duration: 0.5, staggerChildren: 0.1 },
     },
   };
-  function sendEmail(e:any) {
+  function sendEmail(e: any) {
+    setPending(true);
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_kxdhvdb",
-        "template_3i15jgb",
-        formRef?.current,
-        "t8wKaNDqOW71fnrMx"
-      )
-      .then(
-        (result) => {
-            setSuccess(true)
-          console.log(result.text)
-        },
-        (error) => {
-            setErr(true)
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_kxdhvdb", "template_3i15jgb", formRef?.current, "t8wKaNDqOW71fnrMx").then(
+      (result) => {
+        setSuccess(true);
+        console.log(result.text);
+        setPending(false);
+      },
+      (error) => {
+        setErr(true);
+        setPending(false);
+        console.log(error.text);
+      }
+    );
   }
 
   return (
-    <section  id="contact" className=" flex justify-center mt-10  py-40 px-20 overflow-hidden">
+    <section id="contact" className=" flex justify-center mt-10  py-40 px-20 overflow-hidden">
       <motion.div
         className=" flex items-center lg:items-start gap-20 lg:flex-row flex-col "
         variants={variants}
@@ -68,14 +65,16 @@ function Contact() {
           </motion.div>
         </motion.div>
         <div className=" relative" ref={ref}>
-          <motion.div className=" z-[1] relative"
+          <motion.div
+            className=" z-[1] relative"
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
             transition={{ delay: 3, duration: 1 }}
           >
-            <motion.svg  initial={{ opacity: 1 }}
-            whileInView={{ opacity: 0 }}
-            transition={{ delay: 3, duration: 1 }}
+            <motion.svg
+              initial={{ opacity: 1 }}
+              whileInView={{ opacity: 0 }}
+              transition={{ delay: 3, duration: 1 }}
               className=" z-[1] absolute m-auto stroke-violet-600 w-[20rem] h-[20rem] lg:w-[450px] lg:h-[450px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -86,7 +85,7 @@ function Contact() {
                 initial={{ pathLength: 0 }}
                 animate={isInView && { pathLength: 1 }}
                 transition={{ duration: 3 }}
-                className="st0" 
+                className="st0"
                 d="M255.998,0.002C114.606,0.012,0.01,114.604,0,256c0.01,141.406,114.65,255.328,255.926,255.998h0.334
 		l0.297-0.009c27.124,0.038,49.507-8.527,64.961-22.594c15.468-14.01,23.727-33.254,23.708-52.736
 		c0.02-9.148-1.914-18.306-5.521-27.024c6.086-3.464,10.143-6.612,11.301-7.444c4.152-2.957,16-18.766,7.693-31.79
@@ -131,11 +130,13 @@ function Contact() {
               rows={8}
               name="message"
             ></textarea>
-            <Button >
-              Submit
+            <Button disabled={pending}>
+              {pending ? <img src="/loading.png" className=" animate-spin mx-auto text-center w-5 h-5" /> : "Submit"}
             </Button>
-            <span className=" text-violet-600 ">{err&&"Error"}
-            {success&&"Email sent successfully"}</span>
+            <span className=" text-violet-600 ">
+              {err && "Error"}
+              {success && "Email sent successfully"}
+            </span>
           </motion.form>
         </div>
       </motion.div>
