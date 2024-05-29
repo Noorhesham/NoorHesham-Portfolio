@@ -31,7 +31,7 @@ const Projects = () => {
         </h1>
         <div
           className={
-            "md:grid mx-auto my-10 flex flex-wrap md:grid-cols-2 xl:grid-cols-3 items-center justify-center md:gap-10"
+            "md:grid mx-auto my-10 gap-5 flex flex-wrap md:grid-cols-2 xl:grid-cols-3 items-center justify-center md:gap-10"
           }
         >
           {JOBS.map((job) => (

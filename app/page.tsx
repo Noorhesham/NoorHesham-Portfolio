@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import { LampDemo } from "@/components/WaveyBg";
 import { TracingBeam } from "@/components/ui/Beam";
 import { FloatingNav } from "@/components/ui/NavBar";
 import { navItems } from "@/data";
@@ -34,6 +35,7 @@ export default function Home() {
           <Grid />
           <Projects />
         </TracingBeam>
+          <LampDemo/>
         <Clients />
         <Approach />
         <Experience />
