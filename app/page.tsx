@@ -12,7 +12,13 @@ import Projects from "@/components/Projects";
 import { TracingBeam } from "@/components/ui/Beam";
 import { FloatingNav } from "@/components/ui/NavBar";
 import { navItems } from "@/data";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Noor Hesham Portfolio",
+  icons:{icon:'/logo.png'},
+  description:
+    "MERN Stack Developer specializing in React, Next.js, TypeScript,Node .js,Mongo DB and Tailwind CSS. Proven track record of crafting high-performance web applications with sleek, user-friendly interfaces. Adaptable and detail-oriented, committed to delivering top-notch solutions. Passionate about staying ahead in technology and contributing to dynamic teams.",
+};
 export default function Home() {
   return (
     <main className="relative flex justify-center overflow-clip  bg-black-100 items-center flex-col  mx-auto sm:px-10 px-5">
