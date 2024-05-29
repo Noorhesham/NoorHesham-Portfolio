@@ -83,7 +83,7 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item: any, idx) => (
-          <a href={item.link} target='_blank'
+          <li  
             className=" cursor-pointer hover:translate-y-3 duration-200 mb-2 w-[40rem] relative rounded-2xl flex flex-col border border-b-0
              flex-shrink-0 border-slate-800 p-5 md:p-16"
             key={idx}
@@ -100,7 +100,7 @@ export const InfiniteMovingCards = ({
             </a>
           </div>
             </div>
-          </a>
+          </li>
         ))}
       </ul>
     </div>

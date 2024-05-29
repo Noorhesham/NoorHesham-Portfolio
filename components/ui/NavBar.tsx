@@ -7,6 +7,7 @@ import { HambugerMenu } from "../HamburgerMenu";
 import MenuSvg from "../MenuSvg";
 import Button from "../ButtonColorful";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import Image from "next/image";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -78,7 +79,7 @@ export const FloatingNav = ({
 
   return (
     <>
- <motion.div
+      <motion.div
         initial={{
           opacity: 1,
           y: -100,
@@ -125,36 +126,39 @@ export const FloatingNav = ({
         </button> */}
       </motion.div>
       <AnimatePresence>
-          {openNavigation && (
-            <motion.nav
-              variants={container}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className={`${
-                openNavigation ? "flex" : "hidden"
-              }  fixed top-0  left-0 bottom-0 z-40 right-0 bg-black-200 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
-            >
-              <div className=" relative z-50 flex flex-col items-center justify-center m-auto lg:flex-row">
-                {navItems.map((link) => (
-                  <motion.a
-                    variants={item}
-                    onClick={handleClick}
-                    className={`block relative font-code text-2xl uppercase  text-gray-100 transition-colors hover:text-gray-200
+        {openNavigation && (
+          <motion.nav
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className={`${
+              openNavigation ? "flex" : "hidden"
+            }  fixed top-0  left-0 bottom-0 z-40 right-0 bg-black-200 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          >
+            <div className=" relative z-50 flex flex-col items-center justify-center m-auto lg:flex-row">
+            <div className=" mx-auto relative text-center w-52 h-52 ">
+              <img src="/icon.png" className=" absolute object-cover" alt="" />
+            </div>
+              {navItems.map((link) => (
+                <motion.a
+                  variants={item}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase  text-gray-100 transition-colors hover:text-gray-200
              lg:hidden px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold 
                      
                      lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-                    href={link.link}
-                    key={link.link}
-                  >
-                    {link.name}
-                  </motion.a>
-                ))}
-              </div>
-              <HambugerMenu />
-            </motion.nav>
-          )}
-        </AnimatePresence>
+                  href={link.link}
+                  key={link.link}
+                >
+                  {link.name}
+                </motion.a>
+              ))}
+            </div>
+            <HambugerMenu />
+          </motion.nav>
+        )}
+      </AnimatePresence>
       <Button className="ml-auto fixed top-3 z-50 lg:hidden" onClick={toggleNavigation}>
         <MenuSvg openNavigation={openNavigation} />
       </Button>

@@ -17,7 +17,10 @@ export default function Home() {
   return (
     <main className="relative flex justify-center overflow-clip  bg-black-100 items-center flex-col  mx-auto sm:px-10 px-5">
       <FloatingNav navItems={navItems} />
-      <ContactMe/>
+      <div className=" lg:block hidden fixed w-32 h-32  top-2 right-10 z-50">
+        <img src="/logo.png" className=" absolute object-cover" alt="" />
+      </div>
+      <ContactMe />
       <div className=" max-w-7xl w-full">
         <TracingBeam>
           <Hero />

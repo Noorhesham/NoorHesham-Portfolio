@@ -341,17 +341,6 @@ export const projects = [
     link: "https://japan-webpage.netlify.app/",
     git: "https://github.com/Noorhesham/Japan",
   },
-
-  {
-    title: "graphic designer portfolio",
-    img: "/portfolio.png",
-    gen: "Javascript",
-    iconLists: ["/js.png"],
-    des: `as a freelancer built up  a portfolio for a graphic designer to show its work`,
-    id: 13,
-    link: "https://japan-webpage.netlify.app/",
-    git: "https://github.com/Noorhesham/graphic-designer-portfolio",
-  },
   {
     title: "Next Auth",
     img: "/Screenshot (86).png",
@@ -368,7 +357,36 @@ export const projects = [
     git: "https://github.com/Noorhesham/Auth-Next",
   },
 ];
-
+export const JOBS = [
+  {
+    title: "graphic designer portfolio",
+    img: "/portfolio.png",
+    gen: "Javascript",
+    iconLists: ["/js.png"],
+    des: `as a freelancer built up  a portfolio for a graphic designer to show its work`,
+    id: 13,
+    link: "https://japan-webpage.netlify.app/",
+    git: "https://github.com/Noorhesham/graphic-designer-portfolio",
+  },
+  {
+    title: "Elmandoob Web App",
+    img: "/Screenshot (74).png",
+    gen: "Javascript",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/next.webp"],
+    des: `Collaborating with backend ,Developed a comprehensive web application that allows merchants to trade goods and services among each other, integrating features for user registration, product listings, and transaction management..`,
+    id: 35,
+    git: "https://github.com/Noorhesham/elmandoob",
+  },
+  {
+    title: "Teacher",
+    img: "/Screenshot (141).png",
+    gen: "Javascript",
+    iconLists: ["/js.png"],
+    des: `Collaborating with a backend dev,Built a custom user interface for a teaching platform, enabling the teacher to manage courses, assignments, and student interactions efficiently.`,
+    id: 43,
+    git: "https://github.com/Noorhesham/first-teacher",
+  },
+];
 export const testimonials = [
   {
     quote:
@@ -415,32 +433,80 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
+    name: "HTML",
+    img: "/html.webp",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
+    name: "CSS",
+    img: "/css.png",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "Sass",
+    img: "/sass.webp",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 3,
+    name: "Javascript",
+    img: "/js.png",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 4,
     name: "TypeScript",
     img: "/ts.svg",
     nameImg: "/appName.svg",
   },
   {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
+    id: 5,
+    name: "React",
+    img: "/re.svg",
     nameImg: "/hostName.svg",
   },
   {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
+    id: 6,
+    name: "tailwind",
+    img: "/tail.svg",
     nameImg: "/streamName.svg",
   },
   {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
+    id: 7,
+    name: "Next.js.",
+    img: "/next.webp",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 8,
+    name: "Node/Express",
+    img: "/node.png",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 9,
+    name: "Mongo.DB",
+    img: "/idhHZwYUWa.png",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 10,
+    name: "React Query",
+    img: "/query.png",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 34,
+    name: "Framer Motion",
+    img: "/fm.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 24,
+    name: "Redux/Rtk",
+    img: "/redux.svg",
     nameImg: "/dockerName.svg",
   },
 ];
