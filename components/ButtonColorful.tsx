@@ -3,19 +3,19 @@ import ButtonSvg from "./ButtonSvg";
 const Button = ({
   className,text,
   href,
-  onClick,
+  onClick,fixed,
   children,
   px,disabled,
   white=false,
 }: {
   className?: string;text?:string,disabled?:boolean
-  href?: string;
+  href?: string;fixed?:boolean
   onClick?: () => void;
   children?: ReactNode;
   px?: string;
   white?: boolean;
 }) => {
-  const classes = `button disabled:opacity-70  disabled:cursor-not-allowed   relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
+  const classes = `button disabled:opacity-70 ${!fixed?"relative":""} disabled:cursor-not-allowed    inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
     px || "px-7"
   }
   ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;

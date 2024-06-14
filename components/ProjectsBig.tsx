@@ -28,7 +28,7 @@ const ProjectsBig = () => {
   };
   return (
     <Suspense fallback={<img src="/loading.png" alt="loading" className=" text-5xl animate-spin fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"/>}>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-2  mt-24">
+      <div className="flex flex-wrap items-center justify-center w-full px-3 p-4 gap-x-24 gap-y-2  mt-24">
       {selectedProject ? (
         <ProjectDescription moveback={handleBackClick} project={selectedProject} />
       ) : (

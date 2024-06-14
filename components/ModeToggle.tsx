@@ -9,7 +9,6 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 export function ModeToggle() {
   const { setTheme, theme, resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
-
   const handleToggle = (checked: boolean) => {
     setTheme(checked ? "dark" : "light");
   };

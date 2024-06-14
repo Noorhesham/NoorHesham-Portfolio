@@ -30,7 +30,7 @@ const Hero = () => {
             words={"The friendly neighborhood MERN Stack Developer with Next.js. 🕸️"}
           />
           <TypeWriter words={["MongoDB", "Express.js", "React", "Node.js"]} />
-        <div className="flex items-center gap-5">
+        <div className="flex flex-col md:flex-row items-center px-5  gap-5">
         <a className=" mt-1 text-nowrap " href="#about">
             <MagicButton icon={<FaLocationArrow/>} text="Show My Work" />
           </a>

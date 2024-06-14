@@ -159,7 +159,7 @@ export const FloatingNav = ({
           </motion.nav>
         )}
       </AnimatePresence>
-      <Button className="ml-auto fixed top-3 z-50 lg:hidden" onClick={toggleNavigation}>
+      <Button fixed className="  right-5 fixed top-3 z-50 lg:hidden" onClick={toggleNavigation}>
         <MenuSvg openNavigation={openNavigation} />
       </Button>
     </>

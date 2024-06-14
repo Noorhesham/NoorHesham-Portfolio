@@ -1,6 +1,7 @@
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
+import Image from "next/image";
 
 const Project = ({ project,onClick }: { project: any ,onClick:()=>void}) => {
   return (
@@ -14,7 +15,7 @@ const Project = ({ project,onClick }: { project: any ,onClick:()=>void}) => {
             <img src="/bg.png" className=" z-50" alt="bg-img" />
           </div> */}
          <div className=" relative w-full h-full">
-         <img className=" z-10 absolute h-full w-full object-cover rounded-2  xl bottom-0" src={project.img} alt={project.title} />
+         <Image fill className=" z-10 absolute h-full w-full object-cover rounded-2  xl bottom-0" src={project.img} alt={project.title} />
          </div>
         </div>
         <h1 className=" lg:text-2xl md:text-xl text-base line-clamp-1 font-bold">{project.title}</h1>

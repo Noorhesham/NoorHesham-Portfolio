@@ -14,6 +14,7 @@ import { TracingBeam } from "@/components/ui/Beam";
 import { FloatingNav } from "@/components/ui/NavBar";
 import { navItems } from "@/data";
 import { Metadata } from "next";
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "Noor Hesham Portfolio",
   icons:{icon:'/logo.png'},
@@ -25,7 +26,7 @@ export default function Home() {
     <main className="relative flex justify-center overflow-clip  bg-black-100 items-center flex-col  mx-auto sm:px-10 px-5">
       <FloatingNav navItems={navItems} />
       <div className=" lg:block hidden fixed w-32 h-32  top-2 right-10 z-50">
-        <img src="/logo.png" className=" absolute object-cover" alt="" />
+        <Image fill src="/logo.png" className=" absolute object-cover" alt="" />
       </div>
       <ContactMe />
       <div className=" max-w-7xl w-full">

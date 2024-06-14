@@ -25,13 +25,13 @@ const Projects = () => {
         </Link>
       </div>
       <PaginatedProjects projects={projects.slice(4, projects.length)} />
-      <div className="flex mt-10 flex-col">
+      <div className="flex mt-10 items-center flex-col">
         <h1 className="heading capitalize z-10 relative">
           Some of my <span className="text-purple">freelance work</span>
         </h1>
         <div
           className={
-            "md:grid mx-auto my-10 gap-5 flex flex-wrap md:grid-cols-2 xl:grid-cols-3 items-center justify-center md:gap-10"
+            "md:grid mx-auto my-10 gap-5 flex   flex-wrap md:col-auto md:grid-cols-2 xl:grid-cols-3 items-stretch justify-center md:gap-10"
           }
         >
           {JOBS.map((job) => (
