@@ -3,7 +3,7 @@ import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
 
-const Project = ({ project,onClick }: { project: any ,onClick:()=>void}) => {
+const Project = ({ project, onClick }: { project: any; onClick: () => void }) => {
   return (
     <div
       className=" lg:min-h-[32.5rem]  sm:h-[41rem] h-[32rem] sm:w-[570px] items-center justify-center  w-[80vw]"
@@ -15,17 +15,26 @@ const Project = ({ project,onClick }: { project: any ,onClick:()=>void}) => {
             <img src="/bg.png" className=" z-50" alt="bg-img" />
           </div> */}
 
-         <Image fill className=" z-10 absolute h-full w-full object-cover rounded-2  xl bottom-0" src={project.img} alt={project.title} />
-    
+          <Image
+            fill
+            className=" z-10 absolute h-full w-full object-cover rounded-2  xl bottom-0"
+            src={project.img}
+            alt={project.title}
+          />
         </div>
         <h1 className=" lg:text-2xl md:text-xl text-base line-clamp-1 font-bold">{project.title}</h1>
         <p className=" lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
           {project.des.split(" ").slice(1, 13).join(" ")}{" "}
-          <span className=" md:text-xl text-base  text-purple underline hover:text-purple-500 duration-200" onClick={onClick}>Read More ...</span>
+          <span
+            className=" md:text-xl text-base  text-purple underline hover:text-purple-500 duration-200"
+            onClick={onClick}
+          >
+            Read More ...
+          </span>
         </p>
         <div className=" flex items-center justify-between mt-7 mb-3">
           <div className="flex items-center">
-            {project.iconLists.map((icon:any, i:number) => (
+            {project.iconLists.map((icon: any, i: number) => (
               <div
                 style={{ transform: `translateX(-${5 * i * 2}px)` }}
                 className=" border rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8  flex justify-center items-center border-white/[0.2]"
