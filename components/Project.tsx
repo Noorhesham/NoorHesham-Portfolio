@@ -10,13 +10,13 @@ const Project = ({ project,onClick }: { project: any ,onClick:()=>void}) => {
       key={project.id}
     >
       <PinContainer title={project.link} href={project.link}>
-        <div className=" relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]  mb-10">
+        <div className=" relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden  sm:h-[40vh] h-[30vh]  mb-10">
           {/* <div className=" relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
             <img src="/bg.png" className=" z-50" alt="bg-img" />
           </div> */}
-         <div className=" relative w-full h-full">
+
          <Image fill className=" z-10 absolute h-full w-full object-cover rounded-2  xl bottom-0" src={project.img} alt={project.title} />
-         </div>
+    
         </div>
         <h1 className=" lg:text-2xl md:text-xl text-base line-clamp-1 font-bold">{project.title}</h1>
         <p className=" lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
