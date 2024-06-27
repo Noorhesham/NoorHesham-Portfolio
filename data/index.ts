@@ -186,7 +186,7 @@ Using Clerk's webhooks, we handle user data updates efficiently. When a user pro
 Additionally, our application manages complex array fields and forms with ease. The combination of React Hook Form and Zod validation allows us to build dynamic and flexible forms, enhancing user interaction and data validation.`,
     git:"https://github.com/Noorhesham/LinkTreeclone",
     iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
-    video:"https://youtu.be/RvoeZVL6pec",
+    video:"https://www.youtube.com/embed/RvoeZVL6pec",
     id:4333,
     link:"https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4"
   },
@@ -197,7 +197,7 @@ Additionally, our application manages complex array fields and forms with ease. 
     des:"I made this shop home page with next js and tailwind css as a freelance project on freelancer ",
     git:"https://github.com/Noorhesham/shopy",
     iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
-    video:"https://youtu.be/YuKcjo8j_WQ",
+    video:"https://www.youtube.com/embed/YuKcjo8j_WQ",
     id:433
   },
   {
@@ -207,7 +207,7 @@ Additionally, our application manages complex array fields and forms with ease. 
     des:"A landing page for a company  as a freelance project on freelancer,using 3d models and animations , fully responsive and type safe ",
     git:"https://github.com/Noorhesham/landingPage-for-exanor",
     iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg",'/three.svg'],
-    video:"https://youtu.be/oD2Mbo_rCGc",
+    video:"https://www.youtube.com/embed/oD2Mbo_rCGc",
     id:435
   },
   {
