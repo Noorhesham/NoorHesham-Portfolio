@@ -178,6 +178,39 @@ export const projects = [
     git: "https://github.com/Noorhesham/Wild-Oasses-Interface",
   },
   {
+    title:"Link Tree Clone",
+    img: "/Screenshot (195).png",
+    gen: "React",
+    des:`Our application leverages modern web development practices to provide a seamless user experience. Built with Next.js, TypeScript, and MongoDB, it ensures robust performance and maintainability. One of the key features is the integration of webhooks for synchronizing user data with Clerk, a user management service. This synchronization ensures that user profiles are always up-to-date with the latest information.
+Using Clerk's webhooks, we handle user data updates efficiently. When a user profile is created or modified, a webhook event triggers our server to process and update the corresponding data in our MongoDB database. This approach follows the latest authentication best practices, ensuring secure and reliable data handling.
+Additionally, our application manages complex array fields and forms with ease. The combination of React Hook Form and Zod validation allows us to build dynamic and flexible forms, enhancing user interaction and data validation.`,
+    git:"https://github.com/Noorhesham/LinkTreeclone",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
+    video:"https://youtu.be/RvoeZVL6pec",
+    id:4333,
+    link:"https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4"
+  },
+  {
+    title:"Shopify Clone",
+    img: "/shopify1.png",
+    gen: "React",
+    des:"I made this shop home page with next js and tailwind css as a freelance project on freelancer ",
+    git:"https://github.com/Noorhesham/shopy",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
+    video:"https://youtu.be/YuKcjo8j_WQ",
+    id:433
+  },
+  {
+    title:"Landing Page",
+    img: "/Screenshot (173).png",
+    gen: "React",
+    des:"A landing page for a company  as a freelance project on freelancer,using 3d models and animations , fully responsive and type safe ",
+    git:"https://github.com/Noorhesham/landingPage-for-exanor",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg",'/three.svg'],
+    video:"https://youtu.be/oD2Mbo_rCGc",
+    id:435
+  },
+  {
     title: "Robotic Design Modern interface",
     img: "/Screenshot (131).png",
     video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195121446870757376?compact=1",

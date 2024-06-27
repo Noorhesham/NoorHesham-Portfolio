@@ -18,9 +18,10 @@ const ProjectsBig = () => {
     },
     [searchParams]
   );
-  const handleProjectClick = (project: any) => {
-    setSelectedProject(project);
-    router.push(`/?projectBig=${project.id}`, { scroll: false });
+  const handleProjectClick = (clickedProject: any) => {
+    setSelectedProject(clickedProject);
+    const projectId = clickedProject.id;
+    router.push(`/?projectBig=${projectId}`, { scroll: false });
   };
   const handleBackClick = () => {
     setSelectedProject("");

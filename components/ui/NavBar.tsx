@@ -7,7 +7,6 @@ import { HambugerMenu } from "../HamburgerMenu";
 import MenuSvg from "../MenuSvg";
 import Button from "../ButtonColorful";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import Image from "next/image";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -137,9 +136,9 @@ export const FloatingNav = ({
             }  fixed top-0  left-0 bottom-0 z-40 right-0 bg-black-200 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
           >
             <div className=" relative z-50 flex flex-col items-center justify-center m-auto lg:flex-row">
-            <div className=" mx-auto relative text-center w-52 h-52 ">
-              <img src="/icon.png" className=" absolute object-cover" alt="" />
-            </div>
+              <div className=" mx-auto relative text-center w-52 h-52 ">
+                <img src="/icon.png" className=" absolute object-cover" alt="" />
+              </div>
               {navItems.map((link) => (
                 <motion.a
                   variants={item}
