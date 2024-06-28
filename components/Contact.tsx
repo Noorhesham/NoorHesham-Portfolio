@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./ButtonColorful";
+import Image from "next/image";
 
 function Contact() {
   const ref = useRef<any>();
@@ -44,7 +45,7 @@ function Contact() {
         initial="initial"
         whileInView="animate"
       >
-        <motion.div className=" flex-col text-gray-1  dark:text-gray-200 gap-4 flex  capitalize ">
+        <motion.div className=" flex-col  text-gray-200 z-40  dark:text-gray-200 gap-4 flex  capitalize ">
           <motion.h1
             className=" text-violet-500 text-xl lg:text-4xl xl:text-7xl font-semibold mb-5 "
             variants={variants}
@@ -66,7 +67,7 @@ function Contact() {
         </motion.div>
         <div className=" relative" ref={ref}>
           <motion.div
-            className=" z-[1] relative"
+            className=" z-50 relative"
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
             transition={{ delay: 3, duration: 1 }}
@@ -75,7 +76,7 @@ function Contact() {
               initial={{ opacity: 1 }}
               whileInView={{ opacity: 0 }}
               transition={{ delay: 3, duration: 1 }}
-              className=" z-[1] absolute m-auto stroke-violet-600 w-[20rem] h-[20rem] lg:w-[450px] lg:h-[450px]"
+              className=" z-50 absolute m-auto stroke-violet-600 w-[20rem] h-[20rem] lg:w-[450px] lg:h-[450px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -131,7 +132,17 @@ function Contact() {
               name="message"
             ></textarea>
             <Button disabled={pending}>
-              {pending ? <img src="/loading.png" className=" animate-spin mx-auto text-center w-5 h-5" /> : "Submit"}
+              {pending ? (
+                <Image
+                  width={50}
+                  alt="loading"
+                  height={50}
+                  src="/loading.png"
+                  className=" animate-spin mx-auto text-center w-5 h-5"
+                />
+              ) : (
+                "Submit"
+              )}
             </Button>
             <span className=" text-violet-600 ">
               {err && "Error"}
