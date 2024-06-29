@@ -5,10 +5,11 @@ import { GridGlobe } from "./GridGlobe";
 import { tech } from "@/data";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import Lottie from "react-lottie";
 import animationData from "@/data/conffite.json";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+import Image from "next/image";
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
   return (
     <div
@@ -66,18 +67,18 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => {
-      setCopied(false)
+      setCopied(false);
     }, 1000);
   };
   const handleCopy2 = (text: string) => {
     navigator.clipboard.writeText(text);
     setCopied2(true);
     setTimeout(() => {
-      setCopied2(false)
+      setCopied2(false);
     }, 1000);
   };
   return (
-    <div 
+    <div
       className={cn(
         // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
@@ -93,20 +94,20 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           {img && (
             <div className="flex flex-col items-center justify-center px-5 py-3">
-              <img src={img} alt={img} className={cn(imgClassName, "object-cover object-center ")} />
+              <Image height={600} width={600} src={img} alt={img} className={cn(imgClassName, "object-cover object-center ")} />
               <div className="">
                 <p className="font-sans font-extralight md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">{text}</p>
               </div>
             </div>
           )}
         </div>
-        <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"} `}>
+        <div className={`absolute h-52 w-52 right-0 -bottom-14 ${id === 5 && "w-full opacity-80"} `}>
           {spareImg && (
-            <img
+            <Image fill
               src={spareImg}
               alt={spareImg}
               //   width={220}
-              className="object-cover object-center w-full h-full"
+              className="object-contain object-center w-full h-full"
             />
           )}
         </div>
@@ -132,7 +133,19 @@ export const BentoGridItem = ({
           <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}>{title}</div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {id === 2 && (
+            <Suspense
+              fallback={
+                <Image
+                  src="/loading.png"
+                  alt="loading"
+                  className=" text-5xl animate-spin absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+                />
+              }
+            >
+              <GridGlobe />
+            </Suspense>
+          )}
 
           {/* Tech stack list div */}
 
@@ -144,7 +157,7 @@ export const BentoGridItem = ({
                     className="lg:w-16 lg:h-16 md:w-10 md:h-10 w-12 h-12 first:translate-y-3 even:-translate-y-3 odd:translate-y-4 last:translate-y-6"
                     key={i}
                   >
-                    <img className="object-cover" src={item} />
+                    <Image alt={item} fill className=" object-contain" src={item} />
                   </div>
                 ))}
               </div>
@@ -152,25 +165,21 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0 ${copied||copied2 ? "block" : "block"}`}>
+              <div className={`absolute -bottom-5 right-0 ${copied || copied2 ? "block" : "block"}`}>
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie
-                  ref={lottieRef}
-                  options={defaultOptions}
-                  height={200}
-                  width={400}
-                />          </div>
+                <Lottie ref={lottieRef} options={defaultOptions} height={200} width={400} />{" "}
+              </div>
 
               <MagicButton
                 text={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={!copied&&<IoCopyOutline />}
+                icon={!copied && <IoCopyOutline />}
                 position="left"
                 handleClick={() => handleCopy("noordragon2004@gmail.com")}
                 className="!bg-[#161A31]"
               />
               <MagicButton
                 text={copied2 ? "Phone Number is Copied!" : "Copy my Phone Number"}
-                icon={!copied2&&<IoCopyOutline />}
+                icon={!copied2 && <IoCopyOutline />}
                 position="left"
                 handleClick={() => handleCopy2("+201145838187")}
                 className="!bg-[#161A31] md:w-full text-nowrap"

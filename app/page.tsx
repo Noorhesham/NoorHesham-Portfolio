@@ -3,8 +3,11 @@ import Image from "next/image";
 import { Metadata } from "next";
 import Hero from "@/components/Hero";
 import { navItems } from "@/data";
-import PhoneCheck from "@/components/PhoneCheck";
 import { FloatingNav } from "@/components/ui/NavBar";
+import CodeHighlighter from "@/components/CodeHighlighter";
+import Grid from "@/components/Grid";
+import Projects from "@/components/Projects";
+import { TracingBeam } from "@/components/ui/Beam";
 
 const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
 const ButtonGradient = dynamic(() => import("@/components/ButtonGradient"), { ssr: false });
@@ -13,7 +16,6 @@ const Contact = dynamic(() => import("@/components/Contact"), { ssr: false });
 const ContactMe = dynamic(() => import("@/components/ContactMe"), { ssr: false });
 const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
-
 
 export const metadata: Metadata = {
   title: "Noor Hesham Portfolio",
@@ -32,8 +34,11 @@ export default function Home() {
       <ContactMe />
       <div className="max-w-7xl w-full">
         <Hero />
-        <PhoneCheck />
-
+        <TracingBeam>
+          <CodeHighlighter />
+          <Grid />
+          <Projects />
+        </TracingBeam>
         <Clients />
         <Approach />
         <Experience />

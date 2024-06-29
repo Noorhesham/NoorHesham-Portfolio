@@ -2,11 +2,10 @@
 import dynamic from "next/dynamic";
 import useIsMobile from "@/app/hooks/IsPhone";
 import React from "react";
-const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
+const Grid = dynamic(() => import("@/components/Grid"), { ssr: true });
 import CodeHighlighter from "./CodeHighlighter";
-const Projects = dynamic(() => import("@/components/Projects"), { ssr: false });
+const Projects = dynamic(() => import("@/components/Projects"), { ssr: true });
 import { TracingBeam } from "./ui/Beam";
-const LampDemo = dynamic(() => import("@/components/WaveyBg").then((mod) => mod.LampDemo), { ssr: false });
 
 const PhoneCheck = () => {
   const isMobile = useIsMobile();
@@ -19,7 +18,6 @@ const PhoneCheck = () => {
             <Grid />
             <Projects />
           </TracingBeam>
-          <LampDemo />
         </>
       ) : (
         <>

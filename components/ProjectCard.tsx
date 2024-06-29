@@ -34,7 +34,7 @@ const ProjectCard = ({ project,onClick }: { project: any,onClick:()=>void }) => 
               className=" border rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8  flex justify-center items-center border-white/[0.2]"
               key={icon}
             >
-              <img src={icon} alt={icon} className=" p-2" />
+              <Image width={20} height={20} src={icon} alt={icon} className=" p-2" />
             </div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
 
@@ -88,7 +89,9 @@ export const InfiniteMovingCards = ({
              flex-shrink-0 border-slate-800 p-5 md:p-16"
             key={idx}
           >
-            <img src={item.img} alt="" className=" self-start mb-3 rounded-3xl max-h-96 object-cover " />
+           <div className="relative w-full h-96 rounded-3xl">
+           <Image fill src={item.img} alt="" className="  absolute mb-3 rounded-3xl object-contain " />
+           </div>
             <div className="flex flex-col self-end mt-auto">
             <span className="text-xl font-bold leading-[1.6] text-white">{item.name}</span>
             <span className=" text-sm leading-[1.6] text-white-200 font-normal">{item.title}</span>
