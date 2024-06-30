@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import React from "react";
 import TypeWriter from "./TypeWriter";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -6,20 +5,13 @@ import MagicButton from "./ui/MagicButton";
 import ButtonShine from "./ui/ButtonShine";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
-import { Spotlight } from "./ui/SpotLight";
+import Lights from "./Lights";
 
 const Hero = () => {
   return (
     <div className=" pb-20 pt-36">
       {/* <ModeToggle/> */}
-      {
-        <div className="md:block hidden">
-          <Spotlight className="md:block hidden  -top-40 -left-10 md:-left-32 md:-top-20 h-screen " fill="white" />
-          <Spotlight className="md:block hidden  top-10 left-full h-[80vh] w-[50vw] " fill="purple" />
-          <Spotlight className="md:block hidden  top-28 left-80 h-[80vh] w-[50vw]  " fill="blue" />
-          <Spotlight className="md:block hidden  top-28 -right-80 h-[80vh] w-[50vw] " fill="rgb(203 172 249)" />
-        </div>
-      }
+      <Lights />
       <div className="h-full w-full dark:bg-black-100 bg-white   dark:bg-grid-white/[0.07] bg-grid-black/[0.2] absolute top-0 left-0  flex items-center justify-center">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
