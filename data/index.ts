@@ -91,6 +91,71 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 154,
+    title: "Shinopi Store | Next.js Mern E commerce Project",
+    des: `I'm thrilled to share the biggest project of my career with you all: **Shinobi Store**! 🎉
+
+Check out my latest video where I introduce Shinobi Store, an innovative e-commerce platform that’s like Amazon meeting Naruto. Believe it! 👀📹
+
+This project has been an incredible journey, and I'm excited to showcase its amazing features:
+
+🌟 **User Experience**:
+- Robust signup and login with NextAuth, including email verification.
+- Beautiful landing page with featured products and categories.
+- Advanced filtering and sorting by category, subcategory, and custom prices.
+- Debounced requests to optimize resources.
+
+💡 **Technical Excellence**:
+- Server-side rendering, prefetching, and pagination for bookmarkable URLs and state persistence.
+- Streaming, suspense, and loading skeletons for enhanced performance.
+- Fully responsive design.
+
+🛒 **Product Features**:
+- Detailed product pages with zoomable images and image sliders.
+- Add-to-cart synced with local storage and user accounts.
+- Reviews and ratings for each product.
+- Seller profile pages with detailed information.
+
+📊 **User and Admin Dashboards**:
+- User dashboard with sales stats, order details, and customer locations.
+- Admin dashboard for full CRUD operations using React Query.
+- Admins can view all orders, manage products, send notifications, block users, and track revenue.
+
+🛠️ **Product Upload Process**:
+- Smooth 3-step multi-form: product details, image upload/reordering, and variant management.
+- Admin notifications for product approval.
+
+💳 **Seamless Checkout and Payments**:
+- Address, location, and phone collection during checkout.
+- Stripe integration for payments and fund distribution.
+- Automatic Stripe Connect account creation for sellers.
+- Payments collected in my Stripe account and distributed to sellers.
+
+🔔 **Real-Time Features**:
+- Real-time notifications and email updates for user actions.
+
+👨‍💻 **Tech Stack**:
+- Built with Next.js, TypeScript, MongoDB, Socket.IO, Tailwind CSS, and React Query.
+
+From powerful features to Naruto-inspired design elements, Shibobi Store is a project I'm incredibly proud of. It’s a testament to my journey as a full-stack developer and my love for building impactful solutions.`,
+    img: "/Screenshot (206).png",
+    gen: "Next",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/three.svg",
+      "/fm.svg",
+      "/node.png",
+      "/idhHZwYUWa.png",
+      "/next.webp",
+      "/query.png",
+    ],
+    link: "https://nine-tails-shinobi-shop.vercel.app/",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218625840341745666?compact=1",
+    git: "https://github.com/Noorhesham/shopify",
+  },
+  {
     id: 1,
     title: "Quiz Boi | Next.js Mern Project",
     des: `upload quizzes, add questions, solve quizzes with data persistence , implemented cheat prevention mechanisms(timers,etc). dynamic homepage showcasing featured quizzes, user authentication,
@@ -136,9 +201,9 @@ export const projects = [
     gen: "Javascript",
     img: "/gaming.png",
     iconLists: ["/sass.webp", "/js.png"],
-    link: 'https://gaming-castle.netlify.app/',
-    video: 'https://www.youtube.com/embed/le8_Q7OT52E',
-    git: 'https://github.com/Noorhesham/gaming-castle',
+    link: "https://gaming-castle.netlify.app/",
+    video: "https://www.youtube.com/embed/le8_Q7OT52E",
+    git: "https://github.com/Noorhesham/gaming-castle",
   },
   {
     title: "the wild oases admin dashboard",
@@ -178,37 +243,37 @@ export const projects = [
     git: "https://github.com/Noorhesham/Wild-Oasses-Interface",
   },
   {
-    title:"Link Tree Clone",
+    title: "Link Tree Clone",
     img: "/Screenshot (195).png",
     gen: "React",
-    des:`Our application leverages modern web development practices to provide a seamless user experience. Built with Next.js, TypeScript, and MongoDB, it ensures robust performance and maintainability. One of the key features is the integration of webhooks for synchronizing user data with Clerk, a user management service. This synchronization ensures that user profiles are always up-to-date with the latest information.
+    des: `Our application leverages modern web development practices to provide a seamless user experience. Built with Next.js, TypeScript, and MongoDB, it ensures robust performance and maintainability. One of the key features is the integration of webhooks for synchronizing user data with Clerk, a user management service. This synchronization ensures that user profiles are always up-to-date with the latest information.
 Using Clerk's webhooks, we handle user data updates efficiently. When a user profile is created or modified, a webhook event triggers our server to process and update the corresponding data in our MongoDB database. This approach follows the latest authentication best practices, ensuring secure and reliable data handling.
 Additionally, our application manages complex array fields and forms with ease. The combination of React Hook Form and Zod validation allows us to build dynamic and flexible forms, enhancing user interaction and data validation.`,
-    git:"https://github.com/Noorhesham/LinkTreeclone",
+    git: "https://github.com/Noorhesham/LinkTreeclone",
     iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
-    video:"https://www.youtube.com/embed/RvoeZVL6pec",
-    id:4333,
-    link:"https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4"
+    video: "https://www.youtube.com/embed/RvoeZVL6pec",
+    id: 4333,
+    link: "https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4",
   },
   {
-    title:"Shopify Clone",
+    title: "Shopify Clone",
     img: "/shopify1.png",
     gen: "React",
-    des:"I made this shop home page with next js and tailwind css as a freelance project on freelancer ",
-    git:"https://github.com/Noorhesham/shopy",
+    des: "I made this shop home page with next js and tailwind css as a freelance project on freelancer ",
+    git: "https://github.com/Noorhesham/shopy",
     iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
-    video:"https://www.youtube.com/embed/YuKcjo8j_WQ",
-    id:433
+    video: "https://www.youtube.com/embed/YuKcjo8j_WQ",
+    id: 433,
   },
   {
-    title:"Landing Page",
+    title: "Landing Page",
     img: "/Screenshot (173).png",
     gen: "React",
-    des:"A landing page for a company  as a freelance project on freelancer,using 3d models and animations , fully responsive and type safe ",
-    git:"https://github.com/Noorhesham/landingPage-for-exanor",
-    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg",'/three.svg'],
-    video:"https://www.youtube.com/embed/oD2Mbo_rCGc",
-    id:435
+    des: "A landing page for a company  as a freelance project on freelancer,using 3d models and animations , fully responsive and type safe ",
+    git: "https://github.com/Noorhesham/landingPage-for-exanor",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg", "/three.svg"],
+    video: "https://www.youtube.com/embed/oD2Mbo_rCGc",
+    id: 435,
   },
   {
     title: "Robotic Design Modern interface",
@@ -404,6 +469,16 @@ export const JOBS = [
     git: "https://github.com/Noorhesham/graphic-designer-portfolio",
   },
   {
+    title: "Landing Page",
+    img: "/Screenshot (173).png",
+    gen: "React",
+    des: "A landing page for a company  as a freelance project on freelancer,using 3d models and animations , fully responsive and type safe ",
+    git: "https://github.com/Noorhesham/landingPage-for-exanor",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg", "/three.svg"],
+    video: "https://www.youtube.com/embed/oD2Mbo_rCGc",
+    id: 435,
+  },
+  {
     title: "Elmandoob Web App",
     img: "/Screenshot (74).png",
     gen: "Javascript",
@@ -420,6 +495,27 @@ export const JOBS = [
     des: `Collaborating with a backend dev,Built a custom user interface for a teaching platform, enabling the teacher to manage courses, assignments, and student interactions efficiently.`,
     id: 43,
     git: "https://github.com/Noorhesham/first-teacher",
+  },
+  {
+    title: "Link Tree Clone",
+    img: "/Screenshot (195).png",
+    gen: "React",
+    des: ` Built with Next.js, TypeScript, and MongoDB, it ensures robust performance and maintainability.`,
+    git: "https://github.com/Noorhesham/LinkTreeclone",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
+    video: "https://www.youtube.com/embed/RvoeZVL6pec",
+    id: 4333,
+    link: "https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4",
+  },
+  {
+    title: "Shopify Clone",
+    img: "/shopify1.png",
+    gen: "React",
+    des: "I made this shop home page with next js and tailwind css as a freelance project on freelancer ",
+    git: "https://github.com/Noorhesham/shopy",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
+    video: "https://www.youtube.com/embed/YuKcjo8j_WQ",
+    id: 433,
   },
 ];
 export const testimonials = [
