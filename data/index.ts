@@ -208,20 +208,12 @@ From powerful features to Naruto-inspired design elements, Shibobi Store is a pr
   {
     id: 4343,
     title: "Naruto Website | Gsap Scroll Animations",
-    des: `scroll triggered animations 
-
-Parallax scrolling 
-
+    des: `scroll triggered animations Parallax scrolling 
 Advanced CSS
-
 GSAP Animations
-
 Smooth scroll 
-
 moving environments 
-
 video background 
-
 sliders + auto sliders 
 
 `,

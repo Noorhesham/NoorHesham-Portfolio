@@ -42,7 +42,7 @@ const PaginatedProjects = ({ projects }: { projects: any }) => {
         <ProjectDescription moveback={handleBackClick} project={selectedProject} />
       ) : (
         <>
-          <div className={"md:grid flex flex-wrap md:grid-cols-2 xl:grid-cols-3 items-center justify-center md:gap-10"}>
+          <div className={"md:grid auto-rows-fr flex flex-wrap md:grid-cols-2 xl:grid-cols-3 items-stretch  justify-center md:gap-10"}>
             {currentProjects.map((project: any) => (
               <ProjectCard onClick={() => handleProjectClick(project)} key={project.id} project={project} />
             ))}
