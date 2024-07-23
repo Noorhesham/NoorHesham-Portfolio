@@ -22,8 +22,8 @@ const ProjectCard = ({ project, onClick }: { project: any; onClick: () => void }
               <span className="  text-base  text-purple hover:text-purple-500 duration-200">Read More ...</span>
             </CardItem>
           </div>
-          <div className=" gap-2  mt-auto flex flex-col gap-2">
-            <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full  h-52 mt-4">
+          <div className=" gap-2  mt-auto flex flex-col ">
+            <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full h-40  md:h-52 mt-4">
               <Image
                 src={project.img}
                 fill
