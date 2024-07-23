@@ -13,21 +13,20 @@ const ProjectCard = ({ project, onClick }: { project: any; onClick: () => void }
     >
       <CardContainer className="inter-var h-full relative ">
         <CardBody className="bg-gray-50 flex flex-col  relative group/card h-full   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto   rounded-xl p-6 border  ">
-        <div className="flex flex-col  self-stretch flex-auto">
-        <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
-            {project.title}
-          </CardItem>
-          <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-            {project.des.split(" ").slice(1, 13).join(" ")}{" "}
-            <span className="  text-base  text-purple hover:text-purple-500 duration-200">Read More ...</span>
-          </CardItem>
-        </div>
+          <div className="flex flex-col  self-stretch flex-auto">
+            <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+              {project.title}
+            </CardItem>
+            <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+              {project.des.split(" ").slice(1, 13).join(" ")}{" "}
+              <span className="  text-base  text-purple hover:text-purple-500 duration-200">Read More ...</span>
+            </CardItem>
+          </div>
           <div className=" gap-2  mt-auto flex flex-col gap-2">
-            <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full mt-4">
+            <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full  h-52 mt-4">
               <Image
                 src={project.img}
-                height="1000"
-                width="1000"
+                fill
                 className=" h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />

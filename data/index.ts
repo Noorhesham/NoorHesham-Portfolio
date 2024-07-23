@@ -224,7 +224,7 @@ sliders + auto sliders
     video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7221238496139591680?compact=1",
     git: "https://github.com/Noorhesham/scroll-Animations-Naruto",
   },
-  ,
+  
   {
     title: "Link Tree Clone",
     img: "/Screenshot (195).png",
