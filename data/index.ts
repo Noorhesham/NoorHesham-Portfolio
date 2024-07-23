@@ -206,6 +206,32 @@ From powerful features to Naruto-inspired design elements, Shibobi Store is a pr
     git: "https://github.com/Noorhesham/gaming-castle",
   },
   {
+    id: 3,
+    title: "Naruto Website | Gsap Scroll Animations",
+    des: `scroll triggered animations 
+
+Parallax scrolling 
+
+Advanced CSS
+
+GSAP Animations
+
+Smooth scroll 
+
+moving environments 
+
+video background 
+
+sliders + auto sliders 
+
+`,
+    gen: "Javascript",
+    img: "/Screenshot (212).png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.webp", "/logo.gif"],
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7221238496139591680?compact=1",
+    git: "https://github.com/Noorhesham/scroll-Animations-Naruto",
+  },
+  {
     title: "the wild oases admin dashboard",
     img: "/wild.png",
     video:
