@@ -22,7 +22,7 @@ const ProjectCard = ({ project, onClick }: { project: any; onClick: () => void }
             <span className="  text-base  text-purple hover:text-purple-500 duration-200">Read More ...</span>
           </CardItem>
         </div>
-          <div className="  mt-auto flex flex-col gap-2">
+          <div className=" gap-2  mt-auto flex flex-col gap-2">
             <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full mt-4">
               <Image
                 src={project.img}
@@ -44,7 +44,7 @@ const ProjectCard = ({ project, onClick }: { project: any; onClick: () => void }
               ))}
             </div>
           </div>
-          <div className="flex justify-between mt-auto items-center ">
+          <div className="flex  justify-between mt-auto items-center ">
             <CardItem
               translateZ={20}
               translateX={-40}
