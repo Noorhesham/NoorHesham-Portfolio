@@ -191,7 +191,7 @@ From powerful features to Naruto-inspired design elements, Shibobi Store is a pr
     iconLists: ["/query.png", "/tail.svg", "/js.png", "/re.svg", "/supa.jpeg", "/fm.svg"],
     link: "https://the-movieboi.netlify.app/",
     video: "https://www.youtube.com/embed/EVnnrEWPId4?si=XwR6Ay2A_f_y6UsU",
-    git: "https://github.com/Noorhesham/Netflex",
+    git: "https://github.com/Noorhesham/Netflex-Clone",
   },
   {
     id: 3,
