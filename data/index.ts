@@ -532,6 +532,7 @@ export const JOBS = [
     title: "FRONTEND DEVELOPER AT RIGHT MIND",
     img: "logo (6).png",
     link: "https://rightminddev.com/",
+    iconLists: [],
   },
   {
     title: "Project Managment System ",

@@ -8,6 +8,7 @@ import CodeHighlighter from "@/components/CodeHighlighter";
 import Grid from "@/components/Grid";
 import Projects from "@/components/Projects";
 import { TracingBeam } from "@/components/ui/Beam";
+import { Suspense } from "react";
 
 const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
 const ButtonGradient = dynamic(() => import("@/components/ButtonGradient"), { ssr: false });
@@ -33,17 +34,19 @@ export default function Home() {
       </div>
       <ContactMe />
       <div className="max-w-7xl w-full">
-        <Hero />
-        <TracingBeam>
-          <CodeHighlighter />
-          <Grid />
-          <Projects />
-        </TracingBeam>
-        <Clients />
-        <Approach />
-        <Experience />
-        <Contact />
-        <Footer />
+        <Suspense>
+          <Hero />
+          <TracingBeam>
+            <CodeHighlighter />
+            <Grid />
+            <Projects />
+          </TracingBeam>
+          <Clients />
+          <Approach />
+          <Experience />
+          <Contact />
+          <Footer />
+        </Suspense>
       </div>
       <ButtonGradient />
     </main>
