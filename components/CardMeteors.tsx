@@ -32,7 +32,7 @@ const CardMeteors = ({ job }: { job: any }) => {
               <Image
                 src={job.img}
                 fill
-                className=" w-full h-full  object-cover rounded-xl group-hover/card:shadow-xl"
+                className=" w-full h-full  object-contain rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </Link>
