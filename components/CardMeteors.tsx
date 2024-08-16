@@ -1,6 +1,7 @@
 import React from "react";
 import { Meteors } from "./ui/Meteors";
 import Image from "next/image";
+import Link from "next/link";
 
 const CardMeteors = ({ job }: { job: any }) => {
   return (
@@ -25,14 +26,26 @@ const CardMeteors = ({ job }: { job: any }) => {
             <div className="text-xl font-bold text-neutral-600 dark:text-white">{job.title}</div>
             <p className="text-neutral-500 text-sm mt-2 dark:text-neutral-300">{job.des}</p>
           </div>
-          <div className="h-36 relative w-full  mt-4">
-            <Image
-              src={job.img}
-              fill
-              className=" w-full h-full  object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
-          </  div>
+          {job.link ? (
+            <Link href={job.link} className="h-36 relative w-full  mt-4">
+              {" "}
+              <Image
+                src={job.img}
+                fill
+                className=" w-full h-full  object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </Link>
+          ) : (
+            <div className="h-36 relative w-full  mt-4">
+              <Image
+                src={job.img}
+                fill
+                className=" w-full h-full  object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </div>
+          )}
           <div className=" mt-2 flex items-center ">
             {job.iconLists.map((icon: any, i: number) => (
               <div

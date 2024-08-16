@@ -529,6 +529,20 @@ The final product is a powerful tool for wholesalers, providing them with an all
 ];
 export const JOBS = [
   {
+    title: "FRONTEND DEVELOPER AT RIGHT MIND",
+    img: "logo (6).png",
+    link: "https://rightminddev.com/",
+  },
+  {
+    title: "Project Managment System ",
+    img: "/Screenshot (243).png",
+    des: `A comprehensive tool for wholesalers to manage financial transactions, inventory, and customer relations. The system tracks sales, debts, and profits, while organizing products into categories and subcategories. Built as a modern SPA using React and TypeScript, it features efficient CRUD operations with advanced hooks, secure JWT authentication.`,
+    git: "https://github.com/Noorhesham/Product-managment-system",
+    iconLists: ["/node.png", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg", "/idhHZwYUWa.png", "/logo.gif"],
+    id: 42333,
+  },
+  ,
+  {
     title: "graphic designer portfolio",
     img: "/portfolio.png",
     gen: "Javascript",
