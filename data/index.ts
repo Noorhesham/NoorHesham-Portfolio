@@ -537,7 +537,7 @@ export const JOBS = [
   {
     title: "Project Managment System ",
     img: "/Screenshot (243).png",
-    des: `A comprehensive tool for wholesalers to manage financial transactions, inventory, and customer relations. The system tracks sales, debts, and profits, while organizing products into categories and subcategories. Built as a modern SPA using React and TypeScript, it features efficient CRUD operations with advanced hooks, secure JWT authentication.`,
+    des: `Freelance job for a trader that wants to manage everything about his businness and transactions`,
     git: "https://github.com/Noorhesham/Product-managment-system",
     iconLists: ["/node.png", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg", "/idhHZwYUWa.png", "/logo.gif"],
     id: 42333,
