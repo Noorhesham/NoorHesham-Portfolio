@@ -224,7 +224,7 @@ sliders + auto sliders
     video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7221238496139591680?compact=1",
     git: "https://github.com/Noorhesham/scroll-Animations-Naruto",
   },
-  
+
   {
     title: "Link Tree Clone",
     img: "/Screenshot (195).png",
@@ -237,6 +237,47 @@ Additionally, our application manages complex array fields and forms with ease. 
     video: "https://www.youtube.com/embed/RvoeZVL6pec",
     id: 4333,
     link: "https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4",
+  },
+  {
+    title: "Project Managment System ",
+    img: "/Screenshot (243).png",
+    gen: "React",
+    des: `This project is a comprehensive Product Management System tailored for wholesalers, designed to streamline the management of financial transactions, inventory, and customer relations. The system enables users to track every aspect of their business, from recording invoices and managing debts to monitoring profits and organizing products by categories and subcategories.
+
+Key Features:
+
+Complete Financial Tracking: Easily record and monitor all buying and selling transactions. The system keeps a detailed log of invoices and customer payments, including the ability to track debts for customers who owe money.
+
+Advanced Inventory Management: Add, edit, and delete product categories and subcategories. Each category can house multiple products, with features to track stock levels, purchase prices, and sales prices.
+
+Customer Relationship Management: Manage customer information, including tracking debts. The system automatically adjusts customer debts based on payments, clearing the oldest debts first and ensuring accurate financial records.
+
+Optimized CRUD Operations: The app efficiently handles all Create, Read, Update, and Delete operations using just three hooks, ensuring that the data remains in sync with the UI. This approach enhances performance and simplifies code maintenance.
+
+Modern Tech Stack: Built as a Single Page Application (SPA) using React and TypeScript, the app leverages Refresh Tokens with Axios interceptors for secure and seamless authentication.
+
+Challenges and Solutions:
+
+One of the most challenging aspects of this project was the organization of the Backend and Database to handle complex relationships between products, categories, and customer transactions. By utilizing advanced hooks and caching strategies, the app maintains high performance while ensuring data consistency across the platform.
+
+Technologies Used:
+
+React.js (with Hooks)
+TypeScript
+Node.js & Express.js
+MongoDB
+JWT Authentication with Refresh Tokens
+Axios Interceptors
+Outcome:
+
+The final product is a powerful tool for wholesalers, providing them with an all-in-one solution to manage their business operations efficiently. The app's ability to track detailed financial records, manage inventory, and handle customer relations in real-time makes it an indispensable asset for users.
+
+`,
+    git: "https://github.com/Noorhesham/Product-managment-system",
+    iconLists: ["/node.png", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg", "/idhHZwYUWa.png", "/logo.gif"],
+
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7230299408460857345?compact=1",
+    id: 42333,
   },
   {
     title: "the wild oases admin dashboard",
