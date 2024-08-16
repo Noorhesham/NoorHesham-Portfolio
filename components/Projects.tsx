@@ -35,7 +35,7 @@ const Projects = () => {
           }
         >
           {JOBS.map((job) => (
-            <CardMeteors job={job} key={job.id} />
+            <CardMeteors job={job} key={job?.id} />
           ))}
         </div>
       </div>
