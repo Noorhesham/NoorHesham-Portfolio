@@ -40,7 +40,7 @@ const Hero = () => {
           <div className=" w-80 h-80 relative z-10  rounded-full ">
             <Image
               fill
-              src="/noor.png"
+              src="/noor.jpg"
               alt=""
               className=" rounded-full z-20 bg-black scale-90 object-contain  absolute "
             />
