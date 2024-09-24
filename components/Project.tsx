@@ -18,7 +18,7 @@ const Project = ({ project, onClick }: { project: any; onClick: () => void }) =>
           <Image
             fill
             className=" z-10 absolute h-full w-full object-cover rounded-2  xl bottom-0"
-            src={project.img}
+            src={Array.isArray(project.img) ? project.img[0] : project.img}
             alt={project.title}
           />
         </div>

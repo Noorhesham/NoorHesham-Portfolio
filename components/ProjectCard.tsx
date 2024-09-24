@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { motion } from "framer-motion";
+import SwiperCards from "./SwiperCards";
 const ProjectCard = ({ project, onClick }: { project: any; onClick: () => void }) => {
   return (
     <motion.div
@@ -25,7 +26,7 @@ const ProjectCard = ({ project, onClick }: { project: any; onClick: () => void }
           <div className=" gap-2  mt-auto flex flex-col ">
             <CardItem translateZ="100" rotateX={20} rotateZ={-10} className="w-full h-40  md:h-52 mt-4">
               <Image
-                src={project.img}
+                src={Array.isArray(project.img )?project.img[0]:project.img}
                 fill
                 className=" h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"

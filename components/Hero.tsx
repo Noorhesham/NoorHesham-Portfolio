@@ -9,7 +9,10 @@ import Lights from "./Lights";
 
 const Hero = () => {
   return (
-    <div className=" pb-20 pt-36">
+    <div
+      // style={{ backgroundImage: "url(/snow.jpg)", backgroundSize: "cover", backgroundPosition: "center" }}
+      className=" pb-20 pt-20"
+    >
       {/* <ModeToggle/> */}
       <Lights />
       <div className="h-full w-full dark:bg-black-100 bg-white   dark:bg-grid-white/[0.07] bg-grid-black/[0.2] absolute top-0 left-0  flex items-center justify-center">
@@ -43,12 +46,6 @@ const Hero = () => {
               src="/noor.jpg"
               alt=""
               className=" rounded-full z-20 bg-black scale-90 object-contain  absolute "
-            />
-            <Image
-              src="/purple.png"
-              alt=""
-              fill
-              className=" lg:block hidden z-10 absolute left-5 lg:left-[35px] top-8  lg:top-5 object-cover   "
             />
           </div>
         </div>

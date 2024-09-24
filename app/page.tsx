@@ -15,8 +15,8 @@ const ButtonGradient = dynamic(() => import("@/components/ButtonGradient"), { ss
 const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
 const Contact = dynamic(() => import("@/components/Contact"), { ssr: false });
 const ContactMe = dynamic(() => import("@/components/ContactMe"), { ssr: false });
-const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
-const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+const Experience = dynamic(() => import("@/components/Experience"));
+const Footer = dynamic(() => import("@/components/Footer"));
 
 export const metadata: Metadata = {
   title: "Noor Hesham Portfolio",

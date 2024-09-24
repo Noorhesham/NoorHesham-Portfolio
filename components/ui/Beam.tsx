@@ -32,11 +32,11 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
   return (
     <>
       <motion.div ref={ref} className={cn("relative w-full max-w-7xl mx-auto h-full", className)}>
-        <a href="#about" className=" flex gap-1  absolute z-20  items-center  left-1 md:left-[-5.2rem] text-violet-700 -rotate-90 text-xl hover:text-violet-600 top-32">
+        <a href="#about" className=" flex gap-1  absolute z-20  items-center  left-1 md:left-[-3.2rem] text-violet-700 -rotate-90 text-xl hover:text-violet-600 top-32">
           Scroll
         <CiDesktopMouse2  className=" rotate-90 font-semibold text-gray-500"/>
         </a>
-        <div className="absolute -left-4 md:-left-20 top-3">
+        <div className="absolute -left-4 md:left-[-3rem] top-3">
           <motion.div
             transition={{
               duration: 0.2,

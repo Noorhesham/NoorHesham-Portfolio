@@ -178,6 +178,28 @@ From powerful features to Naruto-inspired design elements, Shibobi Store is a pr
     git: "https://github.com/Noorhesham/Quiz-Boi",
   },
   {
+    id: 123123,
+    title: "Elshady | Next.js TypeScript Project",
+    des: `I developed a dynamic Learning Management System (LMS) using TypeScript and Next.js, enhanced with animations powered by Framer Motion. The platform features essential functionalities like user authentication with login and signup processes, as well as comprehensive CRUD operations for managing course content. Users can engage with quizzes and videos while tracking their progress, with restrictions in place to ensure a secure learning environment. Additionally, the system includes a leaderboard to showcase top students, fostering a sense of competition and motivation among learners. This project not only showcases my technical skills but also emphasizes the importance of user experience through smooth animations and interactive design. Collaborating with the backend team allowed me to develop the LMS as a full-stack application, ensuring seamless integration and efficient data management throughout the platform. `,
+    img: ["/shady.png", "/Screenshot 2024-09-04 163501.png", "/Screenshot 2024-09-01 070302.png"],
+    gen: "Next",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg", "/next.webp", "/query.png"],
+    link: "https://platform.el-shady.com/",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7236438392052318209?compact=1",
+    git: "https://github.com/Noorhesham/Arabic-Teacher-nextjs",
+  },
+  {
+    id: 123123,
+    title: "Tabib | Next.js TypeScript Project",
+    des: `Tabib Web App for Doctors: My second project, "Tabib," is a sophisticated web application designed for doctors to manage patient information effectively. Built using Next.js and TypeScript, the app incorporates GSAP and Locomotive Scroll for engaging animations, creating a seamless user experience. Additionally, I integrated an AI chatbot to assist doctors in accessing information quickly and enhancing patient interactions. However, I encountered several challenges during the development process, such as ensuring smooth scrolling interactions while maintaining performance and responsiveness. Integrating animations without compromising usability proved to be a balancing act, requiring meticulous attention to detail. Despite these hurdles, the project has allowed me to deepen my understanding of complex front-end development and showcase my ability to create visually appealing, functional applications. I aim to include both the LMS and Tabib in my portfolio to highlight my diverse skill set and adaptability in tackling various web development challenges.`,
+    img: "/tabib.png",
+    gen: "Next",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg", "/next.webp", "/query.png", "/logo.gif"],
+    link: "https://tabib-sooty.vercel.app/",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7244038221238554624?compact=1",
+    git: "https://github.com/Noorhesham/tabib",
+  },
+  {
     id: 2,
     title: "Movie-Boi |React-IMDB-Netflex Clone",
     des: `
@@ -194,18 +216,18 @@ From powerful features to Naruto-inspired design elements, Shibobi Store is a pr
     git: "https://github.com/Noorhesham/Netflex-Clone",
   },
   {
-    id: 3,
-    title: "Gaming-Castle| Vanilla js Mvc Gaming Store ",
-    des: `more than 500k games using rawg api with details screenshots tags similar games everything clickable typing Javascript
-    by mvc and oop Search with suggestions pagination and filters Sliders Zoom photo on click Wishlist responsive design and more....`,
-    gen: "Javascript",
-    img: "/gaming.png",
-    iconLists: ["/sass.webp", "/js.png"],
-    link: "https://gaming-castle.netlify.app/",
-    video: "https://www.youtube.com/embed/le8_Q7OT52E",
-    git: "https://github.com/Noorhesham/gaming-castle",
+    title: "Link Tree Clone",
+    img: "/Screenshot (195).png",
+    gen: "React",
+    des: `Our application leverages modern web development practices to provide a seamless user experience. Built with Next.js, TypeScript, and MongoDB, it ensures robust performance and maintainability. One of the key features is the integration of webhooks for synchronizing user data with Clerk, a user management service. This synchronization ensures that user profiles are always up-to-date with the latest information.
+Using Clerk's webhooks, we handle user data updates efficiently. When a user profile is created or modified, a webhook event triggers our server to process and update the corresponding data in our MongoDB database. This approach follows the latest authentication best practices, ensuring secure and reliable data handling.
+Additionally, our application manages complex array fields and forms with ease. The combination of React Hook Form and Zod validation allows us to build dynamic and flexible forms, enhancing user interaction and data validation.`,
+    git: "https://github.com/Noorhesham/LinkTreeclone",
+    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
+    video: "https://www.youtube.com/embed/RvoeZVL6pec",
+    id: 4333,
+    link: "https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4",
   },
-
   {
     id: 4343,
     title: "Naruto Website | Gsap Scroll Animations",
@@ -224,20 +246,53 @@ sliders + auto sliders
     video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7221238496139591680?compact=1",
     git: "https://github.com/Noorhesham/scroll-Animations-Naruto",
   },
+  {
+    id: 3,
+    title: "Gaming-Castle| Vanilla js Mvc Gaming Store ",
+    des: `more than 500k games using rawg api with details screenshots tags similar games everything clickable typing Javascript
+    by mvc and oop Search with suggestions pagination and filters Sliders Zoom photo on click Wishlist responsive design and more....`,
+    gen: "Javascript",
+    img: "/gaming.png",
+    iconLists: ["/sass.webp", "/js.png"],
+    link: "https://gaming-castle.netlify.app/",
+    video: "https://www.youtube.com/embed/le8_Q7OT52E",
+    git: "https://github.com/Noorhesham/gaming-castle",
+  },
 
   {
-    title: "Link Tree Clone",
-    img: "/Screenshot (195).png",
-    gen: "React",
-    des: `Our application leverages modern web development practices to provide a seamless user experience. Built with Next.js, TypeScript, and MongoDB, it ensures robust performance and maintainability. One of the key features is the integration of webhooks for synchronizing user data with Clerk, a user management service. This synchronization ensures that user profiles are always up-to-date with the latest information.
-Using Clerk's webhooks, we handle user data updates efficiently. When a user profile is created or modified, a webhook event triggers our server to process and update the corresponding data in our MongoDB database. This approach follows the latest authentication best practices, ensuring secure and reliable data handling.
-Additionally, our application manages complex array fields and forms with ease. The combination of React Hook Form and Zod validation allows us to build dynamic and flexible forms, enhancing user interaction and data validation.`,
-    git: "https://github.com/Noorhesham/LinkTreeclone",
-    iconLists: ["/next.webp", "/tail.svg", "/ts.svg", "/re.svg", "/fm.svg"],
-    video: "https://www.youtube.com/embed/RvoeZVL6pec",
-    id: 4333,
-    link: "https://link-treeclone-olive.vercel.app/profile/66780ff0b18f0237beef90e4",
+    id: 123123,
+    title: "Animation ! ",
+    des: `Website that has alot of great animations with gsap ! not specicfic businnesss but just tranining on some complex animations`,
+    img: ["/Screenshot 2024-09-24 142729.png"],
+    gen: "Next",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg", "/next.webp", "/query.png", "/logo.gif"],
+    link: "https://tabib-sooty.vercel.app/",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7238666417749843968?compact=1",
+    git: "https://github.com/Noorhesham/moon-parallex",
   },
+  {
+    id: 32445,
+    title: "Animation 2 ! ",
+    des: `Website that has alot of great animations with gsap ! not specicfic businnesss but just tranining on some complex animations`,
+    img: ["/Screenshot 2024-08-23 070813.png"],
+    gen: "Next",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg", "/next.webp", "/query.png", "/logo.gif"],
+
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7232614752730968064?compact=1",
+    git: "https://github.com/Noorhesham/moon-parallex",
+  },
+  {
+    id: 123123,
+    title: "Saudia Soul",
+    des: `Landing Page for a Saudi Travel Agency: In another project, I developed a visually striking landing page for a travel agency in Saudi Arabia using vanilla JavaScript, Sass, and Tailwind CSS. The page features stunning styles and smooth animations, creating an immersive experience for users. However, the development process was particularly complicated due to the constraints of using vanilla JavaScript without any frameworks. This required me to write custom scripts for interactivity and animation, which posed challenges in maintaining clean and efficient code. Utilizing Sass for styling allowed me to implement complex styles, while Tailwind CSS provided utility-first classes that enhanced design consistency. Despite the difficulties, this project has strengthened my ability to create engaging and dynamic web pages from scratch, showcasing my proficiency in frontend development techniques and design principles.`,
+    img: "/Screenshot 2024-09-24 141847.png",
+    gen: "Next",
+    iconLists: ["/tail.svg", "/sass.webp", "/js.png"],
+    link: "https://tabib-sooty.vercel.app/",
+    video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7238292658916339713?compact=1",
+    git: "https://github.com/Noorhesham/Saudia",
+  },
+
   {
     title: "Project Managment System ",
     img: "/Screenshot (243).png",
@@ -530,7 +585,7 @@ The final product is a powerful tool for wholesalers, providing them with an all
 export const JOBS = [
   {
     title: "FRONTEND DEVELOPER AT RIGHT MIND",
-    img: "logo (6).png",
+    img: "/logo (6).png",
     link: "https://rightminddev.com/",
     iconLists: [],
   },
