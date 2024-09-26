@@ -8,7 +8,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Noor Hesham Portfolio",
-  icons: { icon: "/noor.jpg" },
+  icons: { icon: "/logo.png" },
+  openGraph: {
+    type: "website",
+    title: "Noor Hesham Portfolio",
+    description: "MERN Stack Developer specializing in React, Next.js, TypeScript, Node.js, MongoDB, and Tailwind CSS.",
+    images: [
+      {
+        url: "/noor.jpg", // Path to your Open Graph image
+        alt: "Noor Hesham Portfolio",
+      },
+    ],
+    url: "https://noor-hesham-portfolio.vercel.app/", // Replace with your actual URL
+  },
   description:
     "MERN Stack Developer specializing in React, Next.js, TypeScript,Node .js,Mongo DB and Tailwind CSS. Proven track record of crafting high-performance web applications with sleek, user-friendly interfaces. Adaptable and detail-oriented, committed to delivering top-notch solutions. Passionate about staying ahead in technology and contributing to dynamic teams.",
 };

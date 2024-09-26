@@ -3,6 +3,7 @@ import { FaBackward, FaGithub, FaLocationArrow, FaPlay } from "react-icons/fa";
 import Button from "./ButtonColorful";
 import Link from "next/link";
 import SwiperCards from "./SwiperCards";
+import Image from "next/image";
 
 const ProjectDescription = ({ project, moveback }: { project: any; moveback: () => void }) => {
   return (
@@ -16,7 +17,19 @@ const ProjectDescription = ({ project, moveback }: { project: any; moveback: () 
       </Button>
       <div className=" relative flex items-center justify-center  w-[80vw] overflow-hidden   mb-10">
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-3  w-full  z-10 justify-between items-center">
-          <SwiperCards autoplay items={[...project.img]} />
+          {Array.isArray(project.img) ? (
+            <SwiperCards autoplay items={[...project.img]} />
+          ) : (
+            <div className=" min-h-80 w-full h-full relative">
+              {" "}
+              <Image
+                src={project.img}
+                fill
+                className=" h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </div>
+          )}
 
           {project.video && (
             <iframe
