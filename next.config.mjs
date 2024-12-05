@@ -5,7 +5,9 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
+  },images:{
+    unoptimi
+  }
 };
 
 export default nextConfig;
